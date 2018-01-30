@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.a10553.erweimatest01.CustomScanActivity">
+
+    <Button
+        android:id="@+id/btn_switch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="打开闪光灯"
+        android:textSize="18sp" />
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/dbv_custom"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_above="@+id/btn_switch"
+        android:layout_marginBottom="20dp"
+        app:zxing_framing_rect_height="50dp"
+        app:zxing_framing_rect_width="200dp"
+        app:zxing_preview_scaling_strategy="fitXY"
+        app:zxing_use_texture_view="true" />
+
+</RelativeLayout>

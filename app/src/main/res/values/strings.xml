@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ErWeiMaTest01</string>
+    <string name="title_activity_custom_scan">CustomScanActivity</string>
+</resources>
